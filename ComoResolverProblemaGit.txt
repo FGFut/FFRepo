@@ -1,0 +1,11 @@
+1. muda o nome  da branch para main:
+git branch -m master main
+
+2. Adiciona o repositorio remoto
+git remote nome endereço
+
+3. git pull nome main --allow-unrelated-histories
+
+4. Altera o arquivo, dá git add ., git commit -m, 
+
+5. git push nome main
