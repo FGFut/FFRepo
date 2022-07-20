@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 Alterei
-=======
-Gustavo Limma e vc tcherere
->>>>>>> dab0fbe9a0137dbfa604ba4dd3c6afb5b5e2950b
