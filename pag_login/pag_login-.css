@@ -1,0 +1,45 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    /* background: rgb(20, 58, 149); */
+    
+    color: #EEEEEE;
+}
+.nav_pag-login {
+    background-color: #000000;
+
+    height: 72px;
+
+}
+
+.plogin_main-container {
+    text-align: center;
+    font-size-adjust: initial;
+    background: linear-gradient(197.56deg, #5F045F 0%, #0048A3 100%);
+    padding-top: 40px;
+    padding-bottom: 60px;
+    height: 340px;
+}
+
+.container__div--form {
+    background-color: rgb(0, 0, 0, 60%);
+    padding: 30px 10px 30px 10px;
+
+}
+
+
+
+
+
+.div_footer--container {
+    padding: 30px 40px 30px 30px;
+
+    background-color: #BBBBBB;
+}
+
+.p_footer{
+    color: black;
+
+}
