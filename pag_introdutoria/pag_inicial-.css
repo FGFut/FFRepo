@@ -14,14 +14,20 @@
 
 }
 
-.butao_navbar{
-    padding: 20px;
-    display: inline-flex;
+.div__img--logo {
+    margin-left: 50%;
+
 }
 
-.butao_navbar--conta{
-    margin: 5px;
+.img__logo {
+    /* position: absolute; */
+    width: 62px;
+    height: 55px;
+    margin-left: -30px;
+    /* left: 10px; */
+    margin-top: 9px;
 }
+
 
 
 .pinicial_main-container {
