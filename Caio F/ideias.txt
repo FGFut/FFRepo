@@ -1,0 +1,8 @@
+<--! Banco de itens: ICONFINDER
+menu code = e900
+github code = e901
+unb code = e902-->
+
+
+Marcar partidas em determinados horários sem distribuição de times
+Definir através de perguntas quem será o adm que ficará encarregado de cuidar da bola e da chave
