@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futebas DS | Home</title>
+    <title>Futebas DS | Sign In</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/icons.css">
@@ -16,12 +16,18 @@
 <body>
     <header class="cabecalho">
         <img src="assets/img/logo_final.png" alt="logo do FutebasDS" class="img__logo">
+        <a href="login.html" class="cabecalho__signin">Entrar</a>
     </header>
+
     <main class="conteudo-principal">
-        <p class="welcome-box">Bem-vindo ao<br>FutebasDS</p>
-        <p class="description-box">FutebasDS, o seu site de partidas da FGA.<br>Entre no jogo!</p>
-        <a href="cadastro.html" class="signup__button-homepage">Sou novo</a>
-        <a href="login.html" class="login__link">Já tenho conta</a>
+            <h1 class="titulo__signup">Cadastro</h1>
+            <form class="form__container-signup">
+                <input type="email" placeholder="E-mail" class="input-padrao">
+                <input type="email" placeholder="Confirmar e-mail" class="input-padrao">
+                <input  type="password" placeholder="Senha" class="input-padrao">
+                <input  type="password" placeholder="Confirmar senha" class="input-padrao">
+                <a href="partidas.html" class="button__signup">Pedir primeira!</a>
+            </form>
     </main>
 
     <footer class="rodape">
@@ -31,5 +37,4 @@
     </footer>
     
 </body>
-<script src="main.js"></script>
 </html>
