@@ -33,3 +33,8 @@
   content: "\e902";
   font-size: 37px;
 }
+
+.icon-x_icon:before {
+  content: "\e903";
+  font-size: 50px;
+}
