@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futebas DS | Sign In</title>
+    <title>FGFut | Sign Up</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/icons.css">
@@ -22,11 +22,11 @@
     <main class="conteudo-principal">
             <h1 class="titulo__signup">Cadastro</h1>
             <form class="form__container-signup">
-                <input type="email" placeholder="E-mail" class="input-padrao">
-                <input type="email" placeholder="Confirmar e-mail" class="input-padrao">
-                <input  type="password" placeholder="Senha" class="input-padrao">
-                <input  type="password" placeholder="Confirmar senha" class="input-padrao">
-                <a href="partidas.html" class="button__signup">Pedir primeira!</a>
+                <input type="text" placeholder="Nome e Sobrenome" class="input-padrao" id="input_cadastro_nome">
+                <input type="email" placeholder="E-mail" class="input-padrao" id="input_cadastro_email">
+                <input  type="password" placeholder="Senha" class="input-padrao" id="input_cadastro_password">
+                <input  type="password" placeholder="Confirmar senha" class="input-padrao" id="input_cadastro_confirmapassword">
+                <a href="partidas.html" class="button__signup" id="button__signup">Pedir primeira!</a>
             </form>
     </main>
 
@@ -35,6 +35,8 @@
         <a href="https://github.com/FutebasDS/FutJS" aria-label="GitHub da Equipe" class="icon-github_icon" target="_blank"><i></i></a>
         <i class="icon-unb_icon"></i>
     </footer>
+
+    <script src="cadastro.js"></script>
     
 </body>
 </html>
