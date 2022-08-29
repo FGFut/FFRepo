@@ -1,0 +1,93 @@
+const init = () => {
+    const validateEmail = (event) => {
+        const input = event.currentTarget;
+        const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const emailTest = regex.test(input.value);
+
+        if (!emailTest) {
+            submitButton.setAttribute('disabled', 'disabled');
+            input.classList.add('error');
+            setError(1);
+        }else{
+            submitButton.removeAttribute('disabled');
+            input.classList.remove('error');
+            removeError(1);
+        }
+    }
+
+    const validatePassword = (event) => {
+        const input = event.currentTarget;
+
+        if(input.value.length < 8){
+            submitButton.setAttribute('disabled','disabled');
+            input.classList.add('error');
+            setError(2);
+        }else{
+            submitButton.removeAttribute('disabled');
+            input.classList.remove('error');
+            removeError(2);
+        }
+    }
+
+   
+    const validateName = (event) => {
+        const input = event.currentTarget;
+
+        if(input.value.length < 3){
+            submitButton.setAttribute('disabled','disabled');
+            input.classList.add('error');
+            setError(0);
+        }else{
+            submitButton.removeAttribute('disabled');
+            input.classList.remove('error');
+            removeError(0);
+        }
+    }
+
+    
+
+
+    const inputUsername = document.getElementById('input__cadastro-nome');
+    const inputEmail = document.getElementById('input__cadastro-email');
+    const inputPassword = document.getElementById('input__cadastro-password');
+    const inputConfirmaPassword = document.getElementById('input__cadastro-confirmapassword');
+    const submitButton = document.getElementById('button__signup');
+    const spans = document.querySelectorAll('.span-required')
+
+    function setError(index) {
+        spans[index].style.display = 'block';
+    }
+
+    function removeError(index) {
+        spans[index].style.display = 'none';
+    }
+
+
+    inputUsername.addEventListener('input', validateName);
+    inputEmail.addEventListener('input', validateEmail);
+    inputPassword.addEventListener('input', validatePassword);
+
+    if(submitButton) {
+        submitButton.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            fetch('https://reqres.in/api/register', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: inputUsername.value,
+                    email: inputEmail.value,
+                    password: inputPassword.value,
+                })
+            }).then((response) => {
+                return response.json();
+            }).then((data) => {
+                console.log(data);
+            })
+        })
+    }
+}
+
+window.onload = init;
