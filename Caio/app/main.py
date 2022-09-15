@@ -1,27 +1,10 @@
-from flask import Flask, Response, request, render_template
-from flask_sqlalchemy import SQLAlchemy
-import _mysql_connector
+from re import search
+from flask import Flask, Response, request, render_template, redirect, url_for
+from flask_login import LoginManager, login_user, logout_user
 import json
 
-#usar python 3.8
-
-app = Flask(__name__)
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:2412Lulu.@localhost/cadastro'
-
-db = SQLAlchemy(app)
-
-class Usuario(db.Model):
-    id = db.Column(db.Integer, primary_key = True)
-    name = db.Column(db.String(50))
-    email = db.Column(db.String(100))
-    senha = db.Column(db.String(8))
-
-    def to_json(self):
-        return {"id":self.id, "name": self.name, "email":self.email, "senha": self.senha}
-
-
-db.create_all()
+from app import app, db
+from models import Usuario
 
 #Selecionar Tudo - GET
 @app.route('/usuarios', methods = ["GET"])
@@ -95,15 +78,33 @@ def homepage():
 def cadastrar():
     return render_template('cadastro.html')
 
-@app.route('/login.html')
+@app.route('/login.html', methods = ["GET", "POST"])
 def entrar():
+
+    if request.method == 'POST':
+        body = request.get_json()
+        email = body["email"]
+        senha = body["senha"]
+        user = Usuario.query.filter_by(email = email).first()
+        print(user)
+        
+
+        if not user == None or not user.verify_password(senha):
+            return redirect(url_for('entrar'))
+
+        login_user(user)
+        return redirect(url_for('jogo'))
+
     return render_template('login.html')
 
+@app.route('/logout')
+def logout():
+    logout_user()
+    return redirect(url_for('login.html'))
+
 @app.route('/partidas.html')
-def partidas():
+def jogo():
     return render_template('partidas.html')
-
-
 
 def gera_response(status, nome_do_conteudo, conteudo, mensagem=False):
     body = {}
@@ -115,5 +116,5 @@ def gera_response(status, nome_do_conteudo, conteudo, mensagem=False):
     return Response(json.dumps(body) , status = status, mimetype="application/json")
 
 
-app.run()
+app.run(debug = True)
 

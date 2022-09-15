@@ -86,6 +86,7 @@ const init = () => {
             }).then((data) => {
                 console.log(data);
                 if(data.mensagem == "Criado com sucesso"){
+                    alert("Conta criada com sucesso")
                     window.location.href = "http://localhost:5000/login.html"
                 }
             })

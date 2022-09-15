@@ -42,22 +42,22 @@ const init = () => {
         submitButton.classList.remove('error');
         submitButton.classList.add('success');
         submitButton.textContent = "Tudo certo! :)"
+        window.location.href = "http://localhost:5000/partidas.html"
     }
 
     if(submitButton) {
         submitButton.addEventListener('click', (event) => {
             event.preventDefault();
-
             submitButton.textContent = '...Entrando';
 
-            fetch('http://localhost:5000/usuarios', {
-                method: 'GET',
+            fetch('http://localhost:5000/login.html', {
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
                     email: inputEmail.value,
-                    password: inputPassword.value,
+                    senha: inputPassword.value,
                 })
             }).then((response) => {
             if(response.status !== 200) {
