@@ -70,6 +70,13 @@ def deleta_usuario(id):
         print('Erro', e)
         return gera_response(400, "usuario", {}, "Erro ao deletar")
 
+
+
+
+
+
+#rotas do site
+
 @app.route('/homepage.html')
 def homepage():
     return render_template('homepage.html')
