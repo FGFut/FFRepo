@@ -50,8 +50,8 @@ const init = () => {
 
             submitButton.textContent = '...Entrando';
 
-            fetch('https://reqres.in/api/login', {
-                method: 'POST',
+            fetch('http://localhost:5000/usuarios', {
+                method: 'GET',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -60,10 +60,11 @@ const init = () => {
                     password: inputPassword.value,
                 })
             }).then((response) => {
-                if(response.status !== 200) {
+            if(response.status !== 200) {
                     return errorHandler();
                 }successHandler();
-            }).catch(() => {
+            }).catch((data) => {
+                console.log(data)
                 errorHandler();
             })
         })

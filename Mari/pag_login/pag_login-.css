@@ -10,6 +10,17 @@
 .nav_pag-login {
     background-color: #000000;
     height: 72px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#perfil{
+    display: block;
+    width: 100px;
+    height: 20px;
+    background-color: #888888;
+    color: white;
 }
 
 .div__img--logo {

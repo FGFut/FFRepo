@@ -77,14 +77,16 @@ body::-webkit-scrollbar {
     height:350px;
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 30px;
-    display: block;
     padding-top: 140px;
 }
 
 .login__titulo{
     position: absolute;
-    top: 190px;
+    top: 150px;
     z-index:1;
     font-size: 50px;
     text-align: center;
@@ -97,7 +99,7 @@ body::-webkit-scrollbar {
     outline: unset;
     padding-left: 20px;
     border-radius: 30px;
-    margin-left: 129px;
+    align-self: center;
     margin-bottom: 40px;
 }
 

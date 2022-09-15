@@ -71,20 +71,23 @@ const init = () => {
         submitButton.addEventListener('click', (event) => {
             event.preventDefault();
 
-            fetch('https://reqres.in/api/register', {
+            fetch('http://localhost:5000/usuario', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    username: inputUsername.value,
+                    name: inputUsername.value,
                     email: inputEmail.value,
-                    password: inputPassword.value,
+                    senha: inputPassword.value,
                 })
             }).then((response) => {
                 return response.json();
             }).then((data) => {
                 console.log(data);
+                if(data.mensagem == "Criado com sucesso"){
+                    window.location.href = "http://localhost:5000/login.html"
+                }
             })
         })
     }
