@@ -1,3 +1,4 @@
+
 from enum import unique
 from unicodedata import name
 from app import db, login_manager

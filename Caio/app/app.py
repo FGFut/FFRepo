@@ -7,7 +7,7 @@ import json
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:2412Lulu.@localhost/cadastro'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:<Insira sua senha>@localhost/cadastro'
 app.config['SECRET_KEY'] = 'secret'
 
 login_manager = LoginManager(app)
