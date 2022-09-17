@@ -28,6 +28,7 @@
 .icon-github_icon:before {
   content: "\e901";
   font-size: 46px;
+  color: black
 }
 .icon-unb_icon:before {
   content: "\e902";

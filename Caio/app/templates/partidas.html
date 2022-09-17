@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/reset.css">
     <link rel="stylesheet" href="static/css/icons.css">
+    <link rel="stylesheet" href="static/css/media-queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,12 +19,9 @@
             <img src="static/img/logo_final.png" alt="logo do FutebasDS" class="img__logo">
             <a href="perfil.html"></a>
             <nav>
-                <a href="homepage.html" class="home__link">Home</a>
-                <a href="partidas.html" class="partidas__link">Partidas</a>
+                <a href="/homepage" class="home__link">Home</a>
                 <a href="horários.html" class="hour__link">Horários</a>
-                <a href="perfil.html" class="profile__link">
-                    <img src="static/img/Caio_photo.jpg" alt="Foto do Perfil do User" class="profile__img">
-                </a>
+
             </nav>
     </header>
     <main class="conteudo-principal__partidas">
@@ -33,6 +31,7 @@
             <i class="icon-x_icon"></i>
             <img src="static/img/liverpool.png" alt="Logo Do Liverpool" class="liverpool__icon">
             <button id="btn-partidas-first"><span id="mais__state-first"></span></button>
+            <a href="/login" class="button__participantes">Participantes</a>
         </div>
         <div class="match__container-second">
             <h2>Partida 2 - 16h</h2>
@@ -40,6 +39,7 @@
             <i class="icon-x_icon"></i>
             <img src="static/img/palmeira.png" alt="Logo Do Palmeiras" class="palmeira__icon">
             <button id="btn-partidas-second"><span id="mais__state-second"></span></button>
+            <a href="/login" class="button__participantes">Participantes</a>
         </div>
         <div class="match__container-third">
             <h2>Partida 3 - 18h</h2>
@@ -47,15 +47,17 @@
             <i class="icon-x_icon"></i>
             <img src="static/img/real.png" alt="Logo Do Real Madrid" class="real__icon">
             <button id="btn-partidas-third"><span id="mais__state-third"></span></button>
+            <a href="/login" class="button__participantes">Participantes</a>
         </div>
     </main>
 
-    <footer class="rodape__partidas">
+    <footer class="rodape">
         <p class="members-box">Feudo Roxo Lavanda<br>Caio F., Doan, Gustavo, Mariana e Mateus</p>
-        <a href="https://github.com/FutebasDS/FutJS" aria-label="GitHub da Equipe" class="icon-github_icon" target="_blank"><i></i></a>
-        <i class="icon-unb_icon"></i>
+        <div class = "footer__vertical-alignment">
+            <a href="https://github.com/FutebasDS/FutJS" aria-label="GitHub da Equipe" class="icon-github_icon text-decoration-none" target="_blank"><i></i></a>
+            <i class="icon-unb_icon"></i>
+        </div>
     </footer>
-    
 </body>
 <script src="static/js/main.js"></script>
 </html>

@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
     justify-content: center;
 }
 
-.conteudo-principal{
+.conteudo-principal, .cadastro__conteudo-principal{
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     background: linear-gradient(197.56deg, #5F045F 0%, #0048A3 100%);
@@ -73,7 +73,7 @@ body::-webkit-scrollbar {
 }
 
 .login__form{
-    width: 50%;
+    width: clamp(19rem, 40vw + 10rem, 30rem);
     height:350px;
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(30px);
@@ -93,7 +93,7 @@ body::-webkit-scrollbar {
 }
 
 .login__input-email, .login__input-password {
-    width: 25em;
+    width: clamp(14rem, 20vw + 7rem, 20rem);
     height: 60px;
     color: black;
     outline: unset;
@@ -115,8 +115,8 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 50px;
+    width: clamp(12rem, 20vw + 1rem, 18rem);
+    height: clamp(1.5rem, 5vh + 1rem, 5rem);
     margin: 5px auto 20px auto;
     background: #093A79 ;
     border-radius: 30px;
@@ -154,6 +154,7 @@ body::-webkit-scrollbar {
 
 main{
     position: relative;
+    height: 10vh;
 }
 
 .cabecalho__signin{
@@ -176,8 +177,8 @@ main{
 }
 
 .form__container-signup{
-    width: 50%;
-    height:900px;
+    width: clamp(18rem, 50vw + 5rem, 30rem);
+    height: clamp(5rem, 50vh + 10rem, 28rem);
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(30px);
     border-radius: 30px;
@@ -199,7 +200,7 @@ main{
 }
 
 .input__cadastro-nome, .input__cadastro-email, .input__cadastro-senha, .input__cadastro-confirmasenha{
-    width: 25em;
+    width: clamp(12rem, 20vw + 7rem, 20rem);
     height: 60px;
     color: black;
     outline: unset;
@@ -207,7 +208,7 @@ main{
     border-radius: 30px;
 }
 
-.input__cadastro-email.error, .input__cadastro-nome.error, .input__cadastro-senha.error{
+.input__cadastro-email.error, .input__cadastro-nome.error, .input__cadastro-senha.error, .input__cadastro-confirmasenha.error{
     border: 2px solid red;
 }
 
@@ -226,8 +227,8 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 50px;
+    width: clamp(12rem, 20vw + 1rem, 18rem);
+    height: clamp(1.5rem, 5vh + 1rem, 5rem);
     margin: 50px auto 30px auto;
     background: rgba(9, 132, 88, 1);
     border-radius: 30px;
@@ -240,6 +241,11 @@ main{
     background: #239B56;
 }
 
+.button__signup:disabled {
+    background: var(--button-disabled);
+    cursor: not-allowed;
+}
+
 /*CSS da Página de Partidas*/
 
 .conteudo-principal__partidas{
@@ -247,6 +253,7 @@ main{
     font-size: 24px;
     background: linear-gradient(197.56deg, #5F045F 0%, #0048A3 100%);
     height: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,7 +273,7 @@ main{
 .home__link, .partidas__link, .hour__link, .profile__name{
     font-family: 'Quicksand', sans-serif;
     font-size: 24px;
-    margin-left: 180px;
+    margin-left: 120px;
     transition: 0.5s;
 }
 
@@ -281,7 +288,7 @@ main{
 }
 
 .match__container-first,.match__container-second,.match__container-third{
-    width: 50%;
+    width: clamp(18rem, 40vw + 1rem,  40rem);
     height: 300px;
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(30px);
@@ -347,14 +354,25 @@ main{
     width: 110px;
 }
 
-.rodape__partidas{
-    background-color: #BBBBBB;
-    height: 104px;
-    color:#000000;
+.button__participantes{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: center;
+    z-index: 1;
+    position: absolute;
+    top: 7em;
+    margin: 0 auto;
+    width: 7em;
+    height: clamp(1.5rem, 5vh + 1rem, 5rem);
+    margin: 50px auto 30px auto;
+    background: #093A79;
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.button__participantes:hover{
+    background: rgb(0, 0, 180);
 }
 
 
@@ -365,13 +383,14 @@ main{
 }
 
 .welcome-box{
-    width: 600px;
+    color:#dddddd;
+    width: clamp(1em, 8em, 9em );
     height: 150px;
-    top: 60px;
+    top: 3rem;
     font-style: normal;
     font-weight: 600;
-    font-size: 75px;
-    line-height: 80px;
+    font-size: clamp(1.8rem, 8vw + 1rem, 5rem);
+    line-height: 1em;
     text-align: center;
     letter-spacing: 0.05em;
     display: flex;
@@ -380,12 +399,14 @@ main{
 }
 
 .description-box{
-    top: 268px;
-    width: 300px;
+    color:#dddddd;
+    top: 8em;
+    width: 400px;
     height: 163px;
     font-style: normal;
+    margin-bottom: 5em;
     font-weight: 400;
-    font-size: 32px;
+    font-size: clamp(0.125rem, 3vw + 1rem, 2.5rem);
     line-height: 40px;
     text-align: center;
     letter-spacing: 0.05em;
@@ -395,9 +416,10 @@ main{
 }
 
 .signup__button-homepage{
-    top: 483px;
-    width: 30vw;
-    height: 49px;
+    color: #cccccc;
+    top: 28rem;
+    width: 15em;
+    height: 2.125em;
     border-radius: 30px;
     background-color: #098458;
     font-weight: 400;
@@ -405,7 +427,7 @@ main{
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 28px;
     transition: .8s;
 }
 
@@ -414,7 +436,8 @@ main{
 }
 
 .login__link{
-    top: 546px;
+    top: 22.125em;
+    color: #CCCCCC;
     font-weight: 700;
     font-size: 24px;
     line-height: 25px;
@@ -432,18 +455,25 @@ main{
 
 .rodape{
     background-color: #BBBBBB;
-    height: 104px;
+    height: 8em;
     color:#000000;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.members-box{
-    width: 300px;
-    height: 60%;
+.footer__vertical-alignment{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 200px;
+}
+
+.members-box, .cadastro__members-box, .login__members-box{
+    width: 26rem;
+    height: 3em;
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     text-align: center;
-    font-size: 20px;
+    font-size: clamp(0.5rem, 1vw + 1rem, 2rem);
 }

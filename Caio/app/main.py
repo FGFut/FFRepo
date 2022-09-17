@@ -77,15 +77,15 @@ def deleta_usuario(id):
 
 #rotas do site
 
-@app.route('/homepage.html')
+@app.route('/')
 def homepage():
     return render_template('homepage.html')
 
-@app.route('/cadastro.html')
+@app.route('/cadastro')
 def cadastrar():
     return render_template('cadastro.html')
 
-@app.route('/login.html', methods = ["GET", "POST"])
+@app.route('/login', methods = ["GET", "POST"])
 def entrar():
 
     if request.method == 'POST':
@@ -109,7 +109,7 @@ def logout():
     logout_user()
     return redirect(url_for('login.html'))
 
-@app.route('/partidas.html')
+@app.route('/partidas')
 def jogo():
     return render_template('partidas.html')
 

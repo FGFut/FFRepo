@@ -44,6 +44,19 @@ const init = () => {
         }
     }
 
+    const confirmaPassword = (event) => {
+        const input = event.currentTarget;
+
+        if(input.value != inputPassword.value){
+            submitButton.setAttribute('disabled','disabled');
+            input.classList.add('error');
+            setError(3)
+        }else{
+            submitButton.removeAttribute('disabled');
+            input.classList.remove('error');
+            removeError(3);
+        }
+    }
     
 
 
@@ -66,6 +79,7 @@ const init = () => {
     inputUsername.addEventListener('input', validateName);
     inputEmail.addEventListener('input', validateEmail);
     inputPassword.addEventListener('input', validatePassword);
+    inputConfirmaPassword.addEventListener('input', confirmaPassword);
 
     if(submitButton) {
         submitButton.addEventListener('click', (event) => {
