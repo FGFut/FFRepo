@@ -1,0 +1,37 @@
+.btn{
+   
+    font-size: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background: rgba(9, 132, 88, 1);
+    border-radius: 30px;
+    color: rgba(255, 255, 255, 1);
+    transition: .5s;
+    cursor: pointer;
+}
+.modal{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    position: absolute;
+    display: none;
+    animation: animate;
+    animation-duration: 850ms;
+}
+
+@keyframes animate{
+    from{opacity: 1;}
+    from{opacity: 0;}}
+
+.fechar{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(205, 210, 255);
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}    
