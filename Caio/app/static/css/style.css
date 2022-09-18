@@ -354,11 +354,11 @@ main{
     width: 110px;
 }
 
-.button__participantes{
+.button__participantes,.button__participantes2, .button__participantes3{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     top: 7em;
     margin: 0 auto;
@@ -371,7 +371,7 @@ main{
     cursor: pointer;
 }
 
-.button__participantes:hover{
+.button__participantes:hover,.button__participantes2:hover{
     background: rgb(0, 0, 180);
 }
 
@@ -477,3 +477,51 @@ main{
     text-align: center;
     font-size: clamp(0.5rem, 1vw + 1rem, 2rem);
 }
+
+.parentbox1,.parentbox2, .parentbox3{
+        width: 600px;
+        height: 350px;
+        background-color: black;
+        position: absolute;
+        display: none;
+        animation: animate;
+        animation-duration: 850ms;
+        border-radius: 30px;
+        border: 2px solid #dddddd;
+        
+        
+}
+
+.fechar, .fecharp2, .fecharp3{
+    width: 25px;
+    height: 25px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+    
+}    
+
+.modal__participantes{
+    text-align: center;
+    margin-top: 50px;
+    
+    
+}
+.modal1, .modal2, .modal3, .modal4, .modal5, .modal6{
+    position: absolute;
+}
+.modal1, .modal3, .modal5{
+    left: 150px;
+}
+.modal2, .modal4, .modal6{
+    left: 350px;
+}
+
+.titulo1, .titulo2, .titulop21, .titulop22, .titulo5, .titulo6{
+    margin-top: 50px;
+}
+
+@keyframes animate{
+    from{opacity: 1;}
+    from{opacity: 0;}}

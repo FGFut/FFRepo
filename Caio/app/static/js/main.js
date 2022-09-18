@@ -18,3 +18,5 @@ spanAdd3.classList.toggle('active');}
 buttonAdd1.addEventListener('click',animacaoCerto1);
 buttonAdd2.addEventListener('click',animacaoCerto2);
 buttonAdd3.addEventListener('click',animacaoCerto3);
+
+
