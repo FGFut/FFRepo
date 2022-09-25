@@ -41,11 +41,11 @@ Dessa forma, o nosso site tem como finalidade a disponibilização de horários 
   As expressões regulares foram utilizadas para a validação dos inputs do usuário, visando obter dados válidos para quando esses fossem enviados para um banco de dados.
   
   
-![fgfut_regex](https://user-images.githubusercontent.com/86745462/192161394-8ad54be5-50cd-4806-b4bb-eb45887317c1.gif)
+## ![fgfut_regex](https://user-images.githubusercontent.com/86745462/192161394-8ad54be5-50cd-4806-b4bb-eb45887317c1.gif)
   Este foi a Regex aplicada na página de Cadastro em ação.
   
 
-![fgfut_login](https://user-images.githubusercontent.com/86745462/192161465-1cf6fa79-d76b-4f89-b903-1642d5c1719a.mp4)
+## ![fgfut_login](https://user-images.githubusercontent.com/86745462/192161465-1cf6fa79-d76b-4f89-b903-1642d5c1719a.mp4)
 E aqui sendo aplicada ao login do usuário.
 
 
