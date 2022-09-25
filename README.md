@@ -1,5 +1,7 @@
 # FGFut
-<img src = "https://i.imgur.com/MiB6rJK.png?2" style = "margin: 0 auto">
+<p align = "center">
+<img src = "https://i.imgur.com/MiB6rJK.png?2">
+</p>
 
 # Badges
 <p align="center">
