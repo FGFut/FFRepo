@@ -68,3 +68,10 @@ E aqui sendo aplicada ao login do usuário.
 
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style = "width: 60px"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" style = "width: 60px"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" style = "width: 60px"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style = "width: 60px"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style = "width: 60px"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style = "width: 60px"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" style = "width: 60px"/>
+
+# Pessoas Desenvolvedoras do Projeto
+
+| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Camila Fernanda Alves</sub>](https://github.com/camilafernanda) |  [<img src="https://avatars.githubusercontent.com/u/30351153?v=4" width=115><br><sub>Guilherme Lima</sub>](https://github.com/guilhermeonrails) |  [<img src="https://avatars.githubusercontent.com/u/8989346?v=4" width=115><br><sub>Alex Felipe</sub>](https://github.com/alexfelipe) |
+| :---: | :---: | :---: |
+
+[<img src = "https://user-images.githubusercontent.com/86745462/192162900-9297c156-eb6e-4238-8fe0-05c640897cc0.jpeg" width = 115><br><sub>Caio Alves Braga</sub>](https://github.com/meanmustard) | [<img src = "https://user-images.githubusercontent.com/86745462/192162970-25adfbe0-3a12-40c4-bd0d-e900accdb137.jpg" width = 115><br><sub>Doan Galvão Filho</sub>](https://github.com/D04nd6) | [<img src = "https://user-images.githubusercontent.com/86745462/192163119-6861d18e-4f06-43c6-a107-ccba48b0aa53.jpeg" width = 115><br><sub>Gustavo Lima</sub>](https://github.com/gustavolima973) | [<img src = "https://user-images.githubusercontent.com/86745462/192163212-5855b1d0-d03a-4316-9e71-9a833ae2050e.jpeg" width = 115><br><sub>Mariana Letícia</sub](https://github.com/Marianannn)
