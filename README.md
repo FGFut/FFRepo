@@ -20,8 +20,8 @@
 * [Conclusão](#conclusão)
 
 # Descrição do Projeto
-  O site FGFut tem como objetivo principal solucionar um dos principais problemas da atividade esportiva: marcar horários e saber quem irá comparecer.
-Dessa forma, o nosso site tem como principal finalidade a disponibilização de horários para a prática de atividade esportiva e a visualização dos participantes, para assim facilitar a prática desportiva e promover a saúde dos membros da UnB Campus Gama.
+  O site FGFut tem como objetivo principal solucionar um dos problemas da atividade esportiva: marcar horários e saber quem irá comparecer.
+Dessa forma, o nosso site tem como finalidade a disponibilização de horários para a prática de futsal e a visualização dos participantes, para assim facilitar a prática desportiva e promover a saúde dos membros da UnB Campus Gama.
  
 
 # Status do Projeto
