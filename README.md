@@ -76,4 +76,4 @@ E aqui sendo aplicada ao login do usuário.
 
 # Licença
 
-O FGFut é um software open-source com licença GNU.
+O FGFut é um software open-source com licença GNU General Public License.
