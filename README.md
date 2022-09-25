@@ -29,4 +29,4 @@ Dessa forma, o nosso site tem como principal finalidade a disponibilização de 
     :construction:  Projeto em construção  :construction:
 </h4>
 
-# Funcionalidades e Demonstração da Aplicação (#funcionalidades-e-demonstração-da-aplicação)
+# Funcionalidades e Demonstração da Aplicação
