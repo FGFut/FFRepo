@@ -41,11 +41,11 @@ Dessa forma, o nosso site tem como finalidade a disponibilização de horários 
   As expressões regulares foram utilizadas para a validação dos inputs do usuário, visando obter dados válidos para quando esses fossem enviados para um banco de dados.
   
   
-## ![fgfut_regex](https://user-images.githubusercontent.com/86745462/192161394-8ad54be5-50cd-4806-b4bb-eb45887317c1.gif)
+![fgfut_regex](https://user-images.githubusercontent.com/86745462/192161394-8ad54be5-50cd-4806-b4bb-eb45887317c1.gif)
   Este foi a Regex aplicada na página de Cadastro em ação.
   
-
-## ![fgfut_login](https://user-images.githubusercontent.com/86745462/192161465-1cf6fa79-d76b-4f89-b903-1642d5c1719a.mp4)
+  
+![fgfut_regexLogin](https://user-images.githubusercontent.com/86745462/192162269-3ac1a8bc-869c-447c-8db8-3f57675e6656.gif)
 E aqui sendo aplicada ao login do usuário.
 
 
@@ -66,10 +66,10 @@ E aqui sendo aplicada ao login do usuário.
 
 # Tecnologias utilizadas
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" style = "width: 50px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" style = "width: 50px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" style = "width: 50px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" style = "width: 50px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" style = "width: 50px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" style = "width: 50px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" style = "width: 50px"/>
