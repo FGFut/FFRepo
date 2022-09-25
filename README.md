@@ -1,5 +1,5 @@
 # FGFut
-![FGFUT Logo](https://i.imgur.com/MiB6rJK.png?2)
+<img src = "https://i.imgur.com/MiB6rJK.png?2" align = "center">
 
 # Badges
 <p align="center">
