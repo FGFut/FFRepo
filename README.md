@@ -1,15 +1,15 @@
-# FGFut (#Título)
+# FGFut
 ![FGFUT Logo](https://i.imgur.com/MiB6rJK.png?2)
 
-# Badges (#badges)
+# Badges
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
 # Índice 
 
-* [Título](#Título)
-* [Badges](#badges)
+* [Título](#FGFut)
+* [Badges](#Badges)
 * [Índice](#índice)
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Status do Projeto](#status-do-Projeto)
@@ -19,12 +19,12 @@
 * [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
 * [Conclusão](#conclusão)
 
-# Descrição do Projeto (#descrição-do-projeto)
+# Descrição do Projeto
   O site FGFut tem como objetivo principal solucionar um dos principais problemas da atividade esportiva: marcar horários e saber quem irá comparecer.
 Dessa forma, o nosso site tem como principal finalidade a disponibilização de horários para a prática de atividade esportiva e a visualização dos participantes, para assim facilitar a prática desportiva e promover a saúde dos membros da UnB Campus Gama.
  
 
-# Status do Projeto (#status-do-Projeto)
+# Status do Projeto
 <h4 align="center"> 
     :construction:  Projeto em construção  :construction:
 </h4>
