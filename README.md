@@ -59,10 +59,10 @@ E aqui sendo aplicada ao login do usuário.
 
   A aplicação pode ser acessada no endereço www.fgfut.github.io/FFRepo. As rotas para cada página são:
 
-## '/' - Para acessar a página inicial
-## '/cadastro' - Para acessar a página de cadastro
-## '/login' - Para acessar a página de login
-## '/partidas' - Para acessar a página principal do site
+### '/' - Para acessar a página inicial
+### '/cadastro' - Para acessar a página de cadastro
+### '/login' - Para acessar a página de login
+### '/partidas' - Para acessar a página principal do site
 
 # Tecnologias utilizadas
 
