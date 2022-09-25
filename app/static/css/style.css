@@ -469,7 +469,7 @@ main{
     width: 26rem;
     height: 3em;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     font-size: clamp(0.5rem, 1vw + 1rem, 2rem);
 }
