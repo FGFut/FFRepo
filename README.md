@@ -1,5 +1,5 @@
 # FGFut
-![Logo do FGFUT](https://i.imgur.com/MiB6rJK.png)
+![FgFut Logo](https://i.imgur.com/MiB6rJK.png?1)
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
